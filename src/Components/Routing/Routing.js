@@ -4,8 +4,9 @@ import { LINKS_DATA } from 'Config/config.js';
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route,
+	Route
 } from "react-router-dom";
+import Footer from "Components/Routing/Footer";
 
 export default function Routing() {
 
@@ -21,10 +22,11 @@ export default function Routing() {
 	return (
 		<div>
 			<Router>
-				<Navbar />
+				<Navbar/>
 				<Switch>
 					{switchData}
 				</Switch>
+				<Footer />
 			</Router>
 		</div>
 	);

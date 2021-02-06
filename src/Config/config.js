@@ -1,6 +1,6 @@
 import MainPage from "Components/Pages/MainPage";
 import AboutUs from "Components/Pages/AboutUs";
-import OurProducts from "Components/Pages/OurProducts";
+import OurProducts from "Components/Pages/OurProducts/OurProducts";
 import OurTeam from "Components/Pages/OurTeam";
 
 const COMPANY_NAME = "KANASOFT"
