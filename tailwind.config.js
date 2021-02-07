@@ -4,6 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        "my-purple": "#6c63ff",
+        "my-gradient-purple": "#867eff",
+        "my-light-purple": "#e5e6f8",
         "transparent": "transparent",
         "black": "#000000",
         "white": "#ffffff",
@@ -67,17 +70,6 @@ module.exports = {
         "deep-purple-200-accent": "#7c4dff",
         "deep-purple-400-accent": "#651fff",
         "deep-purple-700-accent": "#6200ea",
-        "indigo": "#3f51b5",
-        "indigo-50": "#e8eaf6",
-        "indigo-100": "#c5cae9",
-        "indigo-200": "#9fa8da",
-        "indigo-300": "#7986cb",
-        "indigo-400": "#5c6bc0",
-        "indigo-500": "#3f51b5",
-        "indigo-600": "#3949ab",
-        "indigo-700": "#303f9f",
-        "indigo-800": "#283593",
-        "indigo-900": "#1a237e",
         "indigo-100-accent": "#8c9eff",
         "indigo-200-accent": "#536dfe",
         "indigo-400-accent": "#3d5afe",

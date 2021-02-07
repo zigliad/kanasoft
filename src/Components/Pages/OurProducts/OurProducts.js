@@ -13,16 +13,16 @@ export default function OurProducts() {
 			<PageHeader title="Our Products" undrawComponent={UndrawProductTour}/>
 
 			<div className="flex flex-col items-center">
-				<div className="mb-40 w-full md:w-4/5">
+				<div className="mt-20 mb-32 w-full md:w-4/5">
 					<BeyondCRM />
 				</div>
-				<div className="my-40 w-full md:w-4/5">
+				<div className="my-32 w-full md:w-4/5">
 					<Farm />
 				</div>
-				<div className="my-40 w-full md:w-4/5">
+				<div className="my-32 w-full md:w-4/5">
 					<Delivery />
 				</div>
-				<div className="my-40 w-full md:w-4/5">
+				<div className="my-32 w-full md:w-4/5">
 					<Tillage />
 				</div>
 			</div>

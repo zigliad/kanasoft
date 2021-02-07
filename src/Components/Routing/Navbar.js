@@ -21,11 +21,11 @@ export default function Navbar() {
                 </Link>
                 {
                     location.pathname === item.to &&
-                    <div className="w-full h-1 bg-gradient-to-r from-light-blue-400 to-blue-500 rounded-full"></div>
+                    <div className="w-full h-1 bg-my-purple rounded-full"></div>
                 }
                 {
                     location.pathname !== item.to &&
-                    <div className="block w-full h-1 transition-transform origin-left scale-x-0 rounded-full transform-gpu group-hover:scale-x-100 bg-gradient-to-r from-light-blue-400 to-blue-500"></div>
+                    <div className="block w-full h-1 transition-transform origin-left scale-x-0 rounded-full transform-gpu group-hover:scale-x-100 bg-my-light-purple"></div>
                 }
             </li>
         )
