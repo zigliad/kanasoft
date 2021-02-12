@@ -19,10 +19,10 @@ export default function PageHeader({ title, undrawComponent }) {
         <div className="mb-20">
             <Grid container spacing={10} justify="space-around" alignItems="center">
                 <Grid item xs={12} sm={12} md={5} lg={4}>
-                    <p className="md:text-left h-auto text-center text-8xl font-bold break-words">{title}</p>
+                    <p className="md:text-left h-auto text-center text-6xl lg:text-8xl font-bold break-words">{title}</p>
                 </Grid>
                 <Grid item xs={12} sm={12} md={5} lg={6}>
-                    <UndrawComponent height={breakPointToImageSize[breakpoint]} />
+                    <UndrawComponent height={`${breakPointToImageSize[breakpoint]}`}/>
                 </Grid>
             </Grid>
         </div>

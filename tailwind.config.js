@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "my-purple": "#6c63ff",
-        "my-gradient-purple": "#867eff",
-        "my-light-purple": "#e5e6f8",
+        "ks-purple": "#6c63ff",
+        "ks-gradient-purple": "#867eff",
+        "ks-light-purple": "#e5e6f8",
+        "ks-dark-purple": "#0e122f",
+        "ks-green": "#22ac98",
+        "ks-orange": "#e5672f",
+        "ks-blue": "#49ade2",
         "transparent": "transparent",
         "black": "#000000",
         "white": "#ffffff",

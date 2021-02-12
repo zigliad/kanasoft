@@ -2,7 +2,7 @@ import 'styles/main.css';
 
 export default function GradientView(props) {
 
-    const colors = props.colors ?? " from-my-purple to-my-gradient-purple"
+    const colors = props.colors ?? " from-ks-purple to-ks-gradient-purple"
     const rotate = props.rotate ?? " rotate-2"
 
     return (

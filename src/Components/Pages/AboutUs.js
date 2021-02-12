@@ -4,8 +4,7 @@ import { UndrawOnTheWay } from 'react-undraw-illustrations';
 
 export default function AboutUs() {
 	return (
-		<div className="p-16 mb-20 ">
-
+		<div className="p-16 mb-20">
 			<PageHeader title="About Kanasoft" undrawComponent={UndrawOnTheWay}/>
 		</div>
 	);
