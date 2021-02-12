@@ -8,6 +8,8 @@ import MyTextArea from 'Components/Form/MyTextArea';
 import { useBreakpoints } from "react-use-breakpoints";
 import MyButton from 'Components/Form/MyButton';
 import FadeIn from 'react-fade-in';
+import emailjs from 'emailjs-com';
+import { SERVICE_ID, TEMPLATE_ID, USER_ID } from 'Config/mail';
 
 function ContactForm() {
 
@@ -16,18 +18,21 @@ function ContactForm() {
     const [message, setMessage] = useState("")
 
     const sendMail = () => {
-        const send = require('gmail-send')({
-            user: 'kanasoft.contact@gmail.com',
-            pass: 'xeQfav-rigqyg-gocju3',
-            to: 'kanasoft.contact@gmail.com',
-            subject: 'Contact Us',
-            replyTo: from
-        });
+        const templateParams = {
+            fullname: fullname,
+            from: from,
+            message: message
+        };
 
-        send()
-            .then(({ result, full }) => console.log(result))
-            .catch((error) => console.error('ERROR', error))
-            ;
+        emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                setFullname("")
+                setFrom("")
+                setMessage("")        
+            }, function (error) {
+                console.log('FAILED...', error);
+            });
     }
 
     return (
@@ -64,11 +69,11 @@ export default function ContactUs() {
     }
 
     return (
-        <div className="p-16 mb-20 w-full">
+        <div className="p-16 w-full">
             <Grid container spacing={10} justify="center" alignItems="center">
                 <Grid item xs={12} md={5} lg={6}>
-                        <FadeIn transitionDuration={2000}>
-                    <Grid container spacing={10} justify="center" alignItems="center">
+                    <FadeIn transitionDuration={2000}>
+                        <Grid container spacing={10} justify="center" alignItems="center">
 
                             <Grid item xs={12}>
                                 <p className="h-auto text-center text-6xl lg:text-8xl font-bold break-words">Contact Us</p>
@@ -76,9 +81,8 @@ export default function ContactUs() {
                             <Grid item xs={12}>
                                 <UndrawNewsletter height={breakPointToImageSize[breakpoint]} />
                             </Grid>
-
-                    </Grid>
-                        </FadeIn>
+                        </Grid>
+                    </FadeIn>
                 </Grid>
                 <Grid item xs={12} md={7} lg={6}>
                     <ContactForm />
@@ -86,5 +90,4 @@ export default function ContactUs() {
             </Grid>
         </div>
     );
-
 }

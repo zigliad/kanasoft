@@ -15,7 +15,7 @@ import FadeIn from 'react-fade-in';
 export default function MainPage() {
 
     const myRef = useRef(null)
-    const executeScroll = () => myRef.current.scrollIntoView()
+    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' })
 
     const animationTransition = 3000
 
@@ -46,7 +46,7 @@ export default function MainPage() {
                     </Grid>
                 </Grid>
                 <div className="absolute bottom-12 animate-bounce">
-                    <button onClick={executeScroll}>
+                    <button onClick={executeScroll} className="focus:outline-none focus:border-0">
                         <FiArrowDown className="text-white w-6 h-6" />
                     </button>
                 </div>
