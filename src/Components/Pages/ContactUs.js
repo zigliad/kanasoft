@@ -7,6 +7,7 @@ import MyTextField from 'Components/Form/MyTextField';
 import MyTextArea from 'Components/Form/MyTextArea';
 import { useBreakpoints } from "react-use-breakpoints";
 import MyButton from 'Components/Form/MyButton';
+import FadeIn from 'react-fade-in';
 
 function ContactForm() {
 
@@ -66,14 +67,18 @@ export default function ContactUs() {
         <div className="p-16 mb-20 w-full">
             <Grid container spacing={10} justify="center" alignItems="center">
                 <Grid item xs={12} md={5} lg={6}>
+                        <FadeIn transitionDuration={2000}>
                     <Grid container spacing={10} justify="center" alignItems="center">
-                        <Grid item xs={12}>
-                            <p className="h-auto text-center text-6xl lg:text-8xl font-bold break-words">Contact Us</p>
-                        </Grid>
-                        <Grid item xs={12}>
-                            <UndrawNewsletter height={breakPointToImageSize[breakpoint]} />
-                        </Grid>
+
+                            <Grid item xs={12}>
+                                <p className="h-auto text-center text-6xl lg:text-8xl font-bold break-words">Contact Us</p>
+                            </Grid>
+                            <Grid item xs={12}>
+                                <UndrawNewsletter height={breakPointToImageSize[breakpoint]} />
+                            </Grid>
+
                     </Grid>
+                        </FadeIn>
                 </Grid>
                 <Grid item xs={12} md={7} lg={6}>
                     <ContactForm />

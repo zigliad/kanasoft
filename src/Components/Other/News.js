@@ -8,7 +8,7 @@ import axios from 'axios';
 function NewsCard(props) {
     const { title, message, link, imgUri } = props.data
     return (
-        <div className="bg-white rounded-xl shadow-xl w-full">
+        <div className="bg-white rounded-xl shadow-xl w-full max-h-96 overflow-auto">
             {
                 imgUri &&
                 <div className="h-44 rounded-t-xl">
@@ -78,11 +78,11 @@ export default function News() {
     }, [])
 
     return (
-        <div className="mb-20">
+        <div className="">
             <Carousel
                 swipeable={true}
                 draggable={true}
-                showDots={false}
+                showDots={true}
                 responsive={responsive}
                 infinite={true}
                 autoPlay={true}
@@ -92,7 +92,7 @@ export default function News() {
                 containerClass="carousel-container"
                 removeArrowOnDeviceType={["tablet", "mobile"]}
                 dotListClass=""
-                itemClass="p-6 mb-12"
+                itemClass="p-6 mb-8"
             >
                 {newsCards}
             </Carousel>

@@ -7,4 +7,8 @@
         background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    .smooth-scroll {
+        scroll-behavior: smooth;
+    }
 }

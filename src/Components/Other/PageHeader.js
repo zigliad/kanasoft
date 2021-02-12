@@ -1,6 +1,7 @@
 import 'styles/main.css';
 import Grid from '@material-ui/core/Grid';
 import { useBreakpoints } from "react-use-breakpoints";
+import FadeIn from 'react-fade-in';
 
 export default function PageHeader({ title, undrawComponent }) {
 
@@ -17,14 +18,16 @@ export default function PageHeader({ title, undrawComponent }) {
 
     return (
         <div className="mb-20">
-            <Grid container spacing={10} justify="space-around" alignItems="center">
-                <Grid item xs={12} sm={12} md={5} lg={4}>
-                    <p className="md:text-left h-auto text-center text-6xl lg:text-8xl font-bold break-words">{title}</p>
+            <FadeIn transitionDuration={2000}>
+                <Grid container spacing={10} justify="space-around" alignItems="center">
+                    <Grid item xs={12} sm={12} md={5} lg={4}>
+                        <p className="md:text-left h-auto text-center text-6xl lg:text-8xl font-bold break-words">{title}</p>
+                    </Grid>
+                    <Grid item xs={12} sm={12} md={5} lg={6}>
+                        <UndrawComponent height={`${breakPointToImageSize[breakpoint]}`} />
+                    </Grid>
                 </Grid>
-                <Grid item xs={12} sm={12} md={5} lg={6}>
-                    <UndrawComponent height={`${breakPointToImageSize[breakpoint]}`}/>
-                </Grid>
-            </Grid>
+            </FadeIn>
         </div>
     );
 }

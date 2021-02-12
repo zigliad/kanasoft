@@ -11,9 +11,7 @@ export default function GradientView(props) {
                 <div className={`h-72 rounded-3xl transform ${rotate} bg-gradient-to-r` + colors}>
                 </div>
             </div>
-
             {props.children}
         </div>
-
     );
 }

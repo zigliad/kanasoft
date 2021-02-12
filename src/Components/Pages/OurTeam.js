@@ -17,7 +17,7 @@ export default function OurTeam() {
 
     return (
         <div className="p-16 mb-20">
-            <PageHeader title="Meet Our People" undrawComponent={UndrawHangOut}/>
+            <PageHeader title="Meet Our People" undrawComponent={UndrawHangOut} />
             <Grid container spacing={10}>
                 {figures}
             </Grid>
