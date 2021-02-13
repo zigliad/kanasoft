@@ -13,7 +13,7 @@ export default function Navbar() {
 
     const listItems = NAV_BAR_DATA.map(item => {
         return (
-            <li className="nav-item group px-1">
+            <li className="nav-item group px-1" id={item.to}>
                 <Link to={item.to}>
                     <p className={"px-3 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75 " + (transparent ? "text-white" : "text-gray-700")}>
                         {item.title}

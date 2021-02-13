@@ -7,7 +7,7 @@ export default function AboutUs() {
 
 	const data = SECTIONS.map((section, index) => {
 		return (
-			<div className="space-y-2">
+			<div className="space-y-2" id={String(index)}>
 				<p className="text-4xl text-gray-800 font-medium">{section.title}</p>
 				<p className="text-2xl text-gray-500">{section.message}</p>
 			</div>

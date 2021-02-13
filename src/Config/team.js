@@ -4,6 +4,7 @@ import RomanBrenner from "Images/Team/RomanBrenner.jpg"
 import MotiMaram from "Images/Team/MotiMaram.jpg"
 import DanRothberg from "Images/Team/DanRothberg.jpg"
 import HaroldWolkin from "Images/Team/HaroldWolkin.jpg"
+import GabiKabazo from "Images/Team/GabiKabazo.jpg"
 
 const TEAM_DATA = [
     {
@@ -45,7 +46,7 @@ const TEAM_DATA = [
             Experience in international trade. Sat on Advisory Boards for private companies
             and Government Advisory Boards.
         `,
-        image: RomanBrenner
+        image: GabiKabazo
     },
 
     {

@@ -59,7 +59,7 @@ export default function MainPage() {
                 <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undrawComponent={UndrawArtLover} />
             </div>
             <div className="p-16">
-                <PagePreview title="Meet Our Heroes" buttonTitle="Check out our team" link="/team" undrawComponent={UndrawInstantSupport} opposite />
+                <PagePreview title="Meet Our Heroes" buttonTitle="Our team" link="/team" undrawComponent={UndrawInstantSupport} opposite />
             </div>
             <div className="p-16 bg-gray-200">
                 <PagePreview title="Know Us Better" buttonTitle="About us" link="/about" undrawComponent={UndrawTeamSpirit} />
