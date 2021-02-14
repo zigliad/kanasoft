@@ -19,7 +19,7 @@ export default function PageHeader({ title, undrawComponent }) {
     return (
         <div className="mb-20">
             <FadeIn transitionDuration={2000}>
-                <Grid container spacing={10} justify="space-around" alignItems="center">
+                <Grid container spacing={3} justify="space-around" alignItems="center">
                     <Grid item xs={12} sm={12} md={5} lg={4}>
                         <p className="md:text-left h-auto text-center text-6xl lg:text-8xl font-bold break-words">{title}</p>
                     </Grid>

@@ -16,9 +16,9 @@ export default function OurTeam() {
     })
 
     return (
-        <div className="p-16 mb-20">
+        <div className="page-padding">
             <PageHeader title="Meet Our People" undrawComponent={UndrawHangOut} />
-            <Grid container spacing={10}>
+            <Grid container spacing={6}>
                 {figures}
             </Grid>
         </div>

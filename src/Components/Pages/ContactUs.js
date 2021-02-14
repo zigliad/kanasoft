@@ -42,7 +42,7 @@ function ContactForm() {
                     setOpen(true)
                 });
         } else {
-            setModalMessage(errorMessage)
+            setModalMessage(String(errorMessage))
             setOpen(true)
         }
     }
@@ -50,7 +50,7 @@ function ContactForm() {
     const checkValidity = () => {
         let errMessage = ""
         if (!REGEX.fullname.test(fullname)) {
-            errMessage += "Your fullname is invalid. "
+            errMessage += "Your full name is invalid. "
         }
         if (!REGEX.mail.test(from.toLowerCase())) {
             errMessage += "Your email is invalid. "
@@ -90,8 +90,8 @@ function ContactForm() {
 
 export default function ContactUs() {
     return (
-        <div className="p-16 w-full">
-            <Grid container spacing={10} justify="center" alignItems="center">
+        <div className="page-padding w-full">
+            <Grid container spacing={3} justify="center" alignItems="center">
                 <Grid item xs={12}>
                     <FadeIn transitionDuration={2000}>
                         <p className="h-auto text-center text-6xl lg:text-8xl font-bold break-words">Contact Us</p>

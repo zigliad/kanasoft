@@ -8,21 +8,19 @@ import PageHeader from 'Components/Other/PageHeader';
 
 export default function OurProducts() {
 	return (
-		<div className="p-16 mb-20 ">
-
+		<div className="page-padding mb-20">
 			<PageHeader title="Our Products" undrawComponent={UndrawProductTour}/>
-
-			<div className="flex flex-col items-center">
-				<div className="mt-20 mb-32 w-full md:w-4/5">
+			<div className="flex flex-col items-center space-y-32">
+				<div className="w-full md:w-4/5">
 					<BeyondCRM />
 				</div>
-				<div className="my-32 w-full md:w-4/5">
+				<div className="w-full md:w-4/5">
 					<Farm />
 				</div>
-				<div className="my-32 w-full md:w-4/5">
+				<div className="w-full md:w-4/5">
 					<Delivery />
 				</div>
-				<div className="my-32 w-full md:w-4/5">
+				<div className="w-full md:w-4/5">
 					<Tillage />
 				</div>
 			</div>

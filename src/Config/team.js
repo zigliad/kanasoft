@@ -21,7 +21,7 @@ const TEAM_DATA = [
         name: "Avner Tal",
         job: "VP Sales & Marketing, CTO and Director",
         info: `
-            technology director of Beyond Solution Company. I studied electronics and control.
+            Technology director of Beyond Solution Company. I studied electronics and control.
             I served in the Navy and I was in the team that implemented and developed the technology
             and even carried out the experiments that included "smart" missiles.
         `,
