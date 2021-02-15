@@ -4,12 +4,17 @@ import { useBreakpoints } from "react-use-breakpoints";
 import MyButton from 'Components/Form/MyButton';
 import { useHistory } from 'react-router-dom';
 import FadeIn from 'react-fade-in';
+import { UIStore } from 'UIStore';
+import { LINKS_DATA } from 'Config/config';
 
 export default function PagePreview({ title, undrawComponent, buttonTitle = undefined, link = undefined, opposite = false }) {
 
     const history = useHistory();
     const linkTo = () => {
         if (link) {
+            UIStore.update(s => {
+                s.transparentNavbar = (link == LINKS_DATA.main.to);
+            })
             history.push(link)
             window.scrollTo(0, 0)
         }

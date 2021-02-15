@@ -22,7 +22,7 @@ export default function Routing() {
 	return (
 		<div>
 			<Router>
-				<Navbar/>
+				<Navbar />
 				<Switch>
 					{switchData}
 				</Switch>

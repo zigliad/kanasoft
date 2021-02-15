@@ -8,7 +8,7 @@ import PageHeader from 'Components/Other/PageHeader';
 
 export default function OurProducts() {
 	return (
-		<div className="page-padding mb-20">
+		<div className="page-padding">
 			<PageHeader title="Our Products" undrawComponent={UndrawProductTour}/>
 			<div className="flex flex-col items-center space-y-32">
 				<div className="w-full md:w-4/5">

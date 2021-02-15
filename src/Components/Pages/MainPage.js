@@ -10,8 +10,11 @@ import { UndrawArtLover } from 'react-undraw-illustrations';
 import { UndrawTeamSpirit } from 'react-undraw-illustrations';
 import { UndrawMessaging } from 'react-undraw-illustrations';
 import { UndrawNews } from 'react-undraw-illustrations';
+import { UndrawBusinessDeal } from 'react-undraw-illustrations';
+import { UndrawFinance } from 'react-undraw-illustrations';
 import { UndrawPressPlay } from 'react-undraw-illustrations';
 import FadeIn from 'react-fade-in';
+import { UIStore } from 'UIStore';
 
 export default function MainPage() {
 
@@ -19,6 +22,10 @@ export default function MainPage() {
     const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' })
 
     const animationTransition = 3000
+
+    UIStore.update(s => {
+        s.transparentNavbar = true;
+    })
 
     return (
         <div>
@@ -52,9 +59,11 @@ export default function MainPage() {
                     </button>
                 </div>
             </div>
-            <div className="page-padding" ref={myRef}>
-                <PagePreview title="Press Releases" undrawComponent={UndrawPressPlay} />
-                <News />
+            <div className="page-padding bg-gray-200 dark:bg-gray-600" ref={myRef}>
+                <PagePreview title="Hi, Investors" buttonTitle="Let's talk business" link="/stock" undrawComponent={UndrawBusinessDeal} />
+            </div>
+            <div className="page-padding">
+                <PagePreview title="Kanasoft In The Press" buttonTitle="Take a look" link="/press" undrawComponent={UndrawPressPlay} opposite/>
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
                 <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undrawComponent={UndrawArtLover} />
