@@ -9,12 +9,16 @@ import { UndrawInstantSupport } from 'react-undraw-illustrations';
 import { UndrawArtLover } from 'react-undraw-illustrations';
 import { UndrawTeamSpirit } from 'react-undraw-illustrations';
 import { UndrawMessaging } from 'react-undraw-illustrations';
-import { UndrawNews } from 'react-undraw-illustrations';
+import { UndrawPresentation } from 'react-undraw-illustrations';
 import { UndrawBusinessDeal } from 'react-undraw-illustrations';
-import { UndrawFinance } from 'react-undraw-illustrations';
-import { UndrawPressPlay } from 'react-undraw-illustrations';
+import { UndrawBrowser } from 'react-undraw-illustrations';
+import { UndrawMobileBrowsers } from 'react-undraw-illustrations';
 import FadeIn from 'react-fade-in';
+import ReactPlayer from 'react-player';
 import { UIStore } from 'UIStore';
+import { useHistory } from 'react-router-dom';
+import { LINKS_DATA } from 'Config/config';
+import { KANASOFT_STOCK_SYMBOL } from 'Config/stock';
 
 export default function MainPage() {
 
@@ -27,6 +31,15 @@ export default function MainPage() {
         s.transparentNavbar = true;
     })
 
+    const history = useHistory();
+    const toStock = () => {
+        UIStore.update(s => {
+            s.transparentNavbar = false;
+        })
+        history.push(LINKS_DATA.stock.to)
+        window.scrollTo(0, 0)
+    }
+
     return (
         <div>
             <div className="bg-gradient-to-br from-indigo-900 to-ks-dark-purple h-screen p-24 flex flex-col justify-center items-center w-full">
@@ -37,17 +50,19 @@ export default function MainPage() {
                                 <div className="">
                                     <p className="text-4xl">We Are</p>
                                     <p className="text-6xl md:text-8xl mt-2">KANASOFT</p>
+                                    <button className="pl-1 focus:outline-none focus:border-0" onClick={toStock}>
+                                        <p className="text-xl font-medium text-ks-green hover:text-ks-orange transition mt-2">{KANASOFT_STOCK_SYMBOL}</p>
+                                    </button>
                                 </div>
                             </div>
                         </FadeIn>
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <FadeIn transitionDuration={animationTransition}>
-                            <div className="flex flex-col justify-center items-center w-full">
+                            <div className="flex flex-col justify-center items-center w-full mt-16 md:mt-0">
                                 <img
                                     className="h-80 md:h-96"
                                     src={Logo}
-                                    alt="website logo"
                                 />
                             </div>
                         </FadeIn>
@@ -63,7 +78,7 @@ export default function MainPage() {
                 <PagePreview title="Hi, Investors" buttonTitle="Let's talk business" link="/stock" undrawComponent={UndrawBusinessDeal} />
             </div>
             <div className="page-padding">
-                <PagePreview title="Kanasoft In The Press" buttonTitle="Take a look" link="/press" undrawComponent={UndrawPressPlay} opposite/>
+                <PagePreview title="Kanasoft In The Press" buttonTitle="Take a look" link="/press" undrawComponent={UndrawMobileBrowsers} opposite />
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
                 <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undrawComponent={UndrawArtLover} />

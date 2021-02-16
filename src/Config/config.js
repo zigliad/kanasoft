@@ -1,6 +1,6 @@
 import MainPage from "Components/Pages/MainPage";
 import AboutUs from "Components/Pages/AboutUs";
-import OurProducts from "Components/Pages/OurProducts/OurProducts";
+import OurProducts from "Components/Pages/OurProducts";
 import OurTeam from "Components/Pages/OurTeam";
 import ContactUs from "Components/Pages/ContactUs";
 import PressReleases from "Components/Pages/PressReleases";

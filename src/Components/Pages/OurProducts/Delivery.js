@@ -1,15 +1,57 @@
-import GradientView from 'Components/Other/GradientView';
+import Carousel from 'react-multi-carousel';
 import 'styles/main.css';
 
+import Img1 from 'Images/Delivery/ks-delivery-1.jpg';
+import Img2 from 'Images/Delivery/ks-delivery-2.jpg';
+import Img3 from 'Images/Delivery/ks-delivery-3.jpg';
+import Img4 from 'Images/Delivery/ks-delivery-4.jpg';
+import Img5 from 'Images/Delivery/ks-delivery-5.jpg';
+
 export default function Delivery() {
+
+    const responsive = {
+        xl: {
+            breakpoint: { max: 3000, min: 1600 },
+            items: 4,
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1600 },
+            items: 3,
+        },
+        tablet: {
+            breakpoint: { max: 1600, min: 600 },
+            items: 2,
+        },
+        mobile: {
+            breakpoint: { max: 600, min: 0 },
+            items: 1,
+        }
+    };
+
+    const data = [Img1, Img2, Img3, Img4, Img5]
+    const content = data.map((theImage, index) => <img src={theImage} className="pointer-events-none"/>)
+
     return (
-        <GradientView>
-            <div className="h-96 w-4/5 lg:w-3/5 absolute lg:left-12 self-center lg:self-auto self-end float-right shadow-xl bg-white rounded-3xl p-8 md:p-12 overflow-auto">
-                <p className="font-bold text-4xl">Delivery</p>
-                <p className="font-medium text-lg text-gray-400 mt-2">
-                    Tailwind CSS is the only framework that I\'ve seen scale on large teams. It’s easy to customize, adapts Tailwind CSS is the only framework that I\'ve seen scale on large teams. It’s easy to customize, adapts to any design and the build size is tiny.
-                </p>
+        <div>
+            <div className="">
+                <Carousel
+                    swipeable={true}
+                    draggable={true}
+                    showDots={true}
+                    responsive={responsive}
+                    infinite={true}
+                    autoPlay={true}
+                    autoPlaySpeed={4000}
+                    keyBoardControl={true}
+                    transitionDuration={500}
+                    containerClass="carousel-container"
+                    removeArrowOnDeviceType={["tablet", "mobile"]}
+                    dotListClass=""
+                    itemClass="p-2 md:p-6 mb-8"
+                >
+                    {content}
+                </Carousel>
             </div>
-        </GradientView>
+        </div>
     );
 }
