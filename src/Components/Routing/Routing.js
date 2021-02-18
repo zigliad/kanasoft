@@ -13,7 +13,7 @@ export default function Routing() {
 	const switchData = Object.values(LINKS_DATA).map(item => {
 		const ComponentPage = item.component
 		return (
-			<Route exact={true} path={item.to} id={item.to}>
+			<Route exact={true} path={item.to} key={item.to}>
 				<ComponentPage />
 			</Route>
 		)

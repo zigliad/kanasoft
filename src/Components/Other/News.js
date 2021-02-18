@@ -8,7 +8,7 @@ import axios from 'axios';
 function NewsCard(props) {
     const { title, message, link, imgUri } = props.data
     return (
-        <div className="bg-white rounded-xl shadow-lg md:shadow-xl w-full max-h-96 overflow-auto">
+        <div className="bg-gray-200 rounded-xl shadow-lg w-full max-h-96 overflow-auto">
             {
                 imgUri &&
                 <div className="h-44 rounded-t-xl">

@@ -7,8 +7,9 @@ import { UIStore } from 'UIStore';
 export default function Navbar() {
 
     const [navbarOpen, setNavbarOpen] = useState(false);
-    const location = useLocation();
     const transparentNavbar = UIStore.useState(s => s.transparentNavbar);
+
+    const location = useLocation();
 
     const setTransparentNavbar = (val) => {
         UIStore.update(s => {
@@ -34,7 +35,7 @@ export default function Navbar() {
 
     const listItems = NAV_BAR_DATA.map(item => {
         return (
-            <li className="nav-item group px-1" id={item.to}>
+            <li className="nav-item group px-1" key={item.to}>
                 <Link to={item.to} onClick={itemClicked}>
                     <p className={"px-3 py-2 flex items-center text-md uppercase font-bold leading-snug hover:opacity-75 " + (transparentNavbar ? "text-white" : "text-gray-700")}>
                         {item.title}

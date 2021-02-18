@@ -5,6 +5,7 @@ import OurTeam from "Components/Pages/OurTeam";
 import ContactUs from "Components/Pages/ContactUs";
 import PressReleases from "Components/Pages/PressReleases";
 import StockPage from "Components/Pages/StockPage";
+import OurClients from "Components/Pages/OurClients";
 
 const COMPANY_NAME = "KANASOFT"
 
@@ -40,6 +41,12 @@ const LINKS_DATA = {
         component: PressReleases 
     },
 
+    clients: {
+        to: "/clients",
+        title: "Clients",
+        component: OurClients 
+    },
+
     stock: {
         to: "/stock",
         title: "Stock",
@@ -57,9 +64,10 @@ const LINKS_DATA = {
 const NAV_BAR_DATA = [
     LINKS_DATA.stock,
     LINKS_DATA.press,
-    LINKS_DATA.about,
     LINKS_DATA.products,
+    LINKS_DATA.clients,
     LINKS_DATA.team,
+    LINKS_DATA.about,
     LINKS_DATA.contact
 ]
 

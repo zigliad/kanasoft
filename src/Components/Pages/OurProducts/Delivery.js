@@ -29,10 +29,15 @@ export default function Delivery() {
     };
 
     const data = [Img1, Img2, Img3, Img4, Img5]
-    const content = data.map((theImage, index) => <img src={theImage} className="pointer-events-none"/>)
+    const content = data.map((theImage, index) => <img src={theImage} className="pointer-events-none" />)
 
     return (
         <div>
+            <p className="info-text mb-8">
+                Our delivery platform is designed to allow customers to easily browse your variety of strains, compare effects, potency and even taste.
+                After browsing and selecting strains, customers can get a delivery right to their door as easily as ordering a pizza.
+                Our platform is designed to be on the cutting edge of delivery to allow for the fastest delivery to the customer, while giving the grower the best tools to provide great service.
+            </p>
             <div className="">
                 <Carousel
                     swipeable={true}

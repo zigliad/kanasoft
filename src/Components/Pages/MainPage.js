@@ -1,5 +1,5 @@
 import 'styles/main.css';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Logo from 'Images/Other/kanasoft-logo.svg';
 import { Grid } from '@material-ui/core';
 import News from 'Components/Other/News';
@@ -12,6 +12,7 @@ import { UndrawMessaging } from 'react-undraw-illustrations';
 import { UndrawPresentation } from 'react-undraw-illustrations';
 import { UndrawBusinessDeal } from 'react-undraw-illustrations';
 import { UndrawBrowser } from 'react-undraw-illustrations';
+import { UndrawExperts } from 'react-undraw-illustrations';
 import { UndrawMobileBrowsers } from 'react-undraw-illustrations';
 import FadeIn from 'react-fade-in';
 import ReactPlayer from 'react-player';
@@ -39,6 +40,18 @@ export default function MainPage() {
         history.push(LINKS_DATA.stock.to)
         window.scrollTo(0, 0)
     }
+
+    useEffect(() => {
+        return () => {
+            console.log(history.action)
+            if (history.action === "POP") {
+                console.log("ASOFIAOFI")
+                UIStore.update(s => {
+                    s.transparentNavbar = false;
+                })
+            }
+        }
+    }, [history])
 
     return (
         <div>
@@ -84,13 +97,16 @@ export default function MainPage() {
                 <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undrawComponent={UndrawArtLover} />
             </div>
             <div className="page-padding">
-                <PagePreview title="Meet Our Heroes" buttonTitle="Our team" link="/team" undrawComponent={UndrawInstantSupport} opposite />
+                <PagePreview title="Meet Our Clients" buttonTitle="Take a look" link="/clients" undrawComponent={UndrawExperts} opposite />
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
-                <PagePreview title="Know Us Better" buttonTitle="About us" link="/about" undrawComponent={UndrawTeamSpirit} />
+                <PagePreview title="Meet Our Heroes" buttonTitle="Our team" link="/team" undrawComponent={UndrawInstantSupport} />
             </div>
             <div className="page-padding">
-                <PagePreview title="Keep In Touch" buttonTitle="Contact us" link="/contact" undrawComponent={UndrawMessaging} opposite />
+                <PagePreview title="Know Us Better" buttonTitle="About us" link="/about" undrawComponent={UndrawTeamSpirit} opposite />
+            </div>
+            <div className="page-padding bg-gray-200 dark:bg-gray-600">
+                <PagePreview title="Keep In Touch" buttonTitle="Contact us" link="/contact" undrawComponent={UndrawMessaging} />
             </div>
         </div>
     );

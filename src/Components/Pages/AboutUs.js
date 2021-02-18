@@ -8,8 +8,8 @@ export default function AboutUs() {
 	const data = SECTIONS.map((section, index) => {
 		return (
 			<div className="space-y-2" id={String(index)}>
-				<p className="text-4xl md:text-5xl text-gradient bg-gradient-to-r from-ks-purple to-ks-gradient-purple font-bold inline-block">{section.title}</p>
-				<p className="text-2xl md:text-2xl text-gray-700 font-medium text-justify leading-relaxed">{section.message}</p>
+				<p className="gradient-title">{section.title}</p>
+				<p className="info-text">{section.message}</p>
 			</div>
 		);
 	})
