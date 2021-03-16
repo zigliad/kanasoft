@@ -18,10 +18,10 @@ const SECTIONS = [
             message: `
             Today Beyond CRM is successfully running the
             operations of more than 400 organizations
-            worldwide. Its annual revenue is in excess of 3 M
-            NIS (850K USD), and has been profitable for
+            worldwide. Its been a profitable company for
             many years. Some of their major clients include;
-            Harel Insurance, Perrigo (pharmaceuticals), One1
+            Harel Insurance (one of the biggest insurance company in
+            Israel), Perrigo (a huge international pharmaceuticals company) - , One1
             (IT) and MenoLead Herut (contracting).
             Our proprietary software, Beyond CRM,
             maximizes our clients' business operations,

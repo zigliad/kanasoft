@@ -37,7 +37,7 @@ export default function Tillage() {
                 Our growing recommendation system is a machine learning powered platform that learns from each grower. We do that by automatically receiving information about the growing process from all
                 growers, using the system to allow our machine learning algorithm to fine tune the growing process to an exact formula for success.
                 We give growers a recommendation program including irrigation cycles, fertilization recommendations, lighting cycles and growth milestones.
-        </p>
+            </p>
             <div className="">
                 <Carousel
                     swipeable={true}
