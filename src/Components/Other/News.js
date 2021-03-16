@@ -41,6 +41,7 @@ function NewsCard(props) {
 
 export default function News() {
 
+    const [loading, setLoading] = useState(true)
     const [data, setData] = useState([])
 
     const responsive = {
@@ -62,8 +63,9 @@ export default function News() {
 
     useEffect(() => {
         const init = async () => {
+            setLoading(true)
             axios({
-                url: NEWS_URI, //your url
+                url: NEWS_URI,
                 method: 'GET',
                 responseType: 'blob', // important
             }).then((response) => {
@@ -71,31 +73,49 @@ export default function News() {
                     try {
                         setData(JSON.parse(text))
                     } catch { }
+                    setLoading(false)
                 })
             });
         }
         init()
     }, [])
 
-    return (
-        <div className="">
-            <Carousel
-                swipeable={true}
-                draggable={true}
-                showDots={true}
-                responsive={responsive}
-                infinite={true}
-                autoPlay={true}
-                autoPlaySpeed={4000}
-                keyBoardControl={true}
-                transitionDuration={500}
-                containerClass="carousel-container"
-                removeArrowOnDeviceType={["tablet", "mobile"]}
-                dotListClass=""
-                itemClass="p-2 md:p-6 mb-8"
-            >
-                {newsCards}
-            </Carousel>
-        </div>
-    );
+    if (loading) {
+        return (
+            <div></div>
+        );
+    } else {
+        return (
+            <div className="">
+                {
+                    data.length === 0 &&
+                    <div className="w-full flex flex-col items-center">
+                        <p className="text-3xl font-medium text-center">Oops</p>
+                        <p className="text-2xl font-medium text-center">We don't have any press releases yet, but please keep in touch!</p>
+                    </div>
+                }
+                {
+                    data.length > 0 &&
+                    <Carousel
+                        swipeable={true}
+                        draggable={true}
+                        showDots={true}
+                        responsive={responsive}
+                        infinite={true}
+                        autoPlay={true}
+                        autoPlaySpeed={4000}
+                        keyBoardControl={true}
+                        transitionDuration={500}
+                        containerClass="carousel-container"
+                        removeArrowOnDeviceType={["tablet", "mobile"]}
+                        dotListClass=""
+                        itemClass="p-2 md:p-6 mb-8"
+                    >
+                        {newsCards}
+                    </Carousel>
+
+                }
+            </div>
+        );
+    }
 }

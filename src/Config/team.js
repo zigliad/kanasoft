@@ -5,6 +5,7 @@ import MotiMaram from "Images/Team/MotiMaram.jpg"
 import DanRothberg from "Images/Team/DanRothberg.jpg"
 import HaroldWolkin from "Images/Team/HaroldWolkin.jpg"
 import GabiKabazo from "Images/Team/GabiKabazo.jpg"
+import BDO from "Images/Team/BDO.jpg"
 
 const TEAM_DATA = [
     {
@@ -86,6 +87,15 @@ const TEAM_DATA = [
         listed on the TSX, TSXV. CSE and the OTC markets.
         `,
         image: DanRothberg
+    },
+    {
+        name: "BDO Israel",
+        job: "Advisors",
+        info: `
+        BDO Israel, one of the top accounting and consulting firms in Israel,
+        has been the consulting accompanying the Beyond-Kanasoft company.
+        `,
+        image: BDO
     },
 ]
 

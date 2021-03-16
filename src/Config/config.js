@@ -20,37 +20,37 @@ const LINKS_DATA = {
     team: {
         to: "/team",
         title: "Team",
-        component: OurTeam 
+        component: OurTeam
     },
 
     products: {
         to: "/products",
         title: "Products",
         component: OurProducts
-    }, 
+    },
 
     contact: {
         to: "/contact",
         title: "Contact",
-        component: ContactUs 
+        component: ContactUs
     },
 
     press: {
         to: "/press",
         title: "Press",
-        component: PressReleases 
+        component: PressReleases
     },
 
     clients: {
         to: "/clients",
         title: "Clients",
-        component: OurClients 
+        component: OurClients
     },
 
     stock: {
         to: "/stock",
         title: "Stock",
-        component: StockPage 
+        component: StockPage
     },
 
     // Keep last!
@@ -72,10 +72,12 @@ const NAV_BAR_DATA = [
 ]
 
 const NEWS_URI = `https://raw.githubusercontent.com/kanasoft-news/news/main/news.json`
+const STORY_URI = `https://stories.storydoc.com/2c16e06ccb3794a7/KANASOFT?utm_source=storydoc&utm_medium=hp&utm_campaign=internal`
 
 export {
     COMPANY_NAME,
     NAV_BAR_DATA,
     LINKS_DATA,
-    NEWS_URI
+    NEWS_URI,
+    STORY_URI
 }
