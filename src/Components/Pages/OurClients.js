@@ -21,7 +21,12 @@ export default function OurClients() {
     return (
         <div className="page-padding">
             <PageHeader title="Our Clients" undrawComponent={UndrawExperts} />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <p className="info-text">
+                Successfully running the operations of more than 400 organizations
+                worldwide. Generating profit each year from its establishment. Below
+                you can review some of our major clients.
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 {data}
             </div>
         </div>
