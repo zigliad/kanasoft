@@ -16,21 +16,14 @@ const SECTIONS = [
       {
             title: "Today",
             message: `
-            Today Beyond CRM is successfully running the
-            operations of more than 400 organizations
-            worldwide. Its been a profitable company for
-            many years. Some of their major clients include;
-            Harel Insurance (one of the biggest insurance company in
-            Israel), Perrigo (a huge international pharmaceuticals company) - , One1
-            (IT) and MenoLead Herut (contracting).
-            Our proprietary software, Beyond CRM,
-            maximizes our clients' business operations,
-            leaving them more time to focus on building
-            for future success. Beyond CRM includes
-            many customer resource management
-            functions such as the ability to improve
-            internal efficiency, control costs and provide
-            outstanding customer service.
+            Today Beyond CRM is successfully running the operations
+            of more than 400 organizations worldwide. Our company is
+            generating profit each year from its establishment.
+            Some of our major clients include: Soreq nuclear research
+            center (Israel's nuclear reactor), Harel Insurance
+            (Leading insurance organization), Perrigo (Pharmaceuticals),
+            One (IT leader specialized in ERP solutions) and 
+            MenoLead Herut (Infrastructure contracting).
 		`
       },
       {
