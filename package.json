@@ -11,7 +11,6 @@
     "@testing-library/user-event": "^12.1.10",
     "axios": "^0.21.1",
     "emailjs-com": "^2.6.4",
-    "gh-pages": "^3.1.0",
     "gmail-send": "^1.8.10",
     "pullstate": "^1.20.6",
     "react": "^17.0.1",
@@ -59,6 +58,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.2.4",
+    "gh-pages": "^3.1.0",
     "postcss": "^8.2.4",
     "postcss-cli": "^8.3.1",
     "tailwindcss": "^2.0.2"
