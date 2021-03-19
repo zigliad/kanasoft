@@ -4,9 +4,11 @@ import { LINKS_DATA } from 'Config/config.js';
 import {
 	BrowserRouter as Router,
 	Switch,
-	Route
+	Route,
+	Redirect
 } from "react-router-dom";
 import Footer from "Components/Routing/Footer";
+import PageNotFound from "Components/Pages/PageNotFound";
 
 export default function Routing() {
 
@@ -25,6 +27,11 @@ export default function Routing() {
 				<Navbar />
 				<Switch>
 					{switchData}
+
+					<Route exact path="/kanasoft">
+						<Redirect to="/" />
+					</Route>
+					<Route component={PageNotFound} />
 				</Switch>
 				<Footer />
 			</Router>
