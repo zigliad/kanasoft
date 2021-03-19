@@ -58,7 +58,7 @@ export default function MainPage() {
                 <Grid container spacing={3} justify="space-evenly" alignItems="center">
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <FadeIn transitionDuration={animationTransition}>
-                            <div className="text-white h-auto font-bold break-words flex flex-col justify-center items-center w-full">
+                            <div className="text-white h-auto font-bold break-words flex flex-col justify-center items-center w-full mt-14 md:mt-0">
                                 <div className="">
                                     <p className="text-4xl">We Are</p>
                                     <p className="text-6xl md:text-8xl mt-2">{COMPANY_NAME}</p>
