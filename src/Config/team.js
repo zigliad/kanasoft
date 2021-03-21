@@ -38,7 +38,9 @@ const TEAM_DATA = [
             aspects of it including real estate corporations, complex sales transactions,
             real estate unions, real estate taxation. Notary License holder since 2014.
             Managed large projects of tens of thousands Square meters for a total amount of
-            above 400 million NIS.
+            above 400 million NIS. At the last 5 years yftah has assembled the business activity
+            of 2 of the largest medical cannabis company's in Israel and has an enormous
+            experience and knowledge in this field.
         `,
         image: YiftahBenYaackov
     },
