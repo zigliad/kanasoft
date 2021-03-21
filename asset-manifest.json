@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.efc58529.chunk.css",
-    "main.js": "/static/js/main.d3beda63.chunk.js",
-    "main.js.map": "/static/js/main.d3beda63.chunk.js.map",
+    "main.js": "/static/js/main.237b7842.chunk.js",
+    "main.js.map": "/static/js/main.237b7842.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.2ec0803f.js",
     "runtime-main.js.map": "/static/js/runtime-main.2ec0803f.js.map",
     "static/css/2.e72a9a0e.chunk.css": "/static/css/2.e72a9a0e.chunk.css",
@@ -22,8 +22,10 @@
     "static/media/RomanBrenner.f8b26b23.jpg": "/static/media/RomanBrenner.f8b26b23.jpg",
     "static/media/YiftahBenYaackov.fa789ea4.jpg": "/static/media/YiftahBenYaackov.fa789ea4.jpg",
     "static/media/ariel-wimasor-logo.18b63403.png": "/static/media/ariel-wimasor-logo.18b63403.png",
+    "static/media/bravo-logo.23789d35.png": "/static/media/bravo-logo.23789d35.png",
+    "static/media/elpam-logo.62c3c1bd.png": "/static/media/elpam-logo.62c3c1bd.png",
     "static/media/hamat-logo.dfe6ba39.jpg": "/static/media/hamat-logo.dfe6ba39.jpg",
-    "static/media/harel-logo.4fe184eb.png": "/static/media/harel-logo.4fe184eb.png",
+    "static/media/harel-logo.42282374.png": "/static/media/harel-logo.42282374.png",
     "static/media/kanasoft-logo.5fbc3802.svg": "/static/media/kanasoft-logo.5fbc3802.svg",
     "static/media/knowledge_1.ef315f9b.png": "/static/media/knowledge_1.ef315f9b.png",
     "static/media/knowledge_2.f85e4e23.png": "/static/media/knowledge_2.f85e4e23.png",
@@ -33,19 +35,20 @@
     "static/media/ks-delivery-3.4cd9d509.jpg": "/static/media/ks-delivery-3.4cd9d509.jpg",
     "static/media/ks-delivery-4.89a8b64e.jpg": "/static/media/ks-delivery-4.89a8b64e.jpg",
     "static/media/ks-delivery-5.17db0b38.jpg": "/static/media/ks-delivery-5.17db0b38.jpg",
-    "static/media/lipski-logo.f3203424.png": "/static/media/lipski-logo.f3203424.png",
-    "static/media/mehkar-mahshevim-logo.8550bcc9.png": "/static/media/mehkar-mahshevim-logo.8550bcc9.png",
+    "static/media/lipski-logo.f0775132.png": "/static/media/lipski-logo.f0775132.png",
+    "static/media/mazor-logo.f8605ec9.png": "/static/media/mazor-logo.f8605ec9.png",
     "static/media/menolead-logo.e4356e8b.png": "/static/media/menolead-logo.e4356e8b.png",
+    "static/media/ness-logo.5619fdb8.png": "/static/media/ness-logo.5619fdb8.png",
     "static/media/perrigo-logo.dbfdccb4.png": "/static/media/perrigo-logo.dbfdccb4.png",
     "static/media/styles.css": "/static/media/revicons.e8746a62.woff",
     "static/media/sano-logo.c7c266fc.png": "/static/media/sano-logo.c7c266fc.png",
-    "static/media/soreq-logo.abe489e7.png": "/static/media/soreq-logo.abe489e7.png"
+    "static/media/shomera-logo.e3c08a0d.jpg": "/static/media/shomera-logo.e3c08a0d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.2ec0803f.js",
     "static/css/2.e72a9a0e.chunk.css",
     "static/js/2.b35bc882.chunk.js",
     "static/css/main.efc58529.chunk.css",
-    "static/js/main.d3beda63.chunk.js"
+    "static/js/main.237b7842.chunk.js"
   ]
 }
