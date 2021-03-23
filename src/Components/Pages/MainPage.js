@@ -77,7 +77,7 @@ export default function MainPage() {
                     </Grid>
                     <Grid item xs={12} sm={12} md={12} lg={6}>
                         <FadeIn transitionDuration={animationTransition}>
-                            <div className="flex flex-col justify-center items-center w-full mt-16 md:mt-0">
+                            <div className="flex flex-col justify-center items-center w-full mt-12 md:mt-0">
                                 <img
                                     className="h-80 md:h-96"
                                     src={Logo}

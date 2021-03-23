@@ -189,12 +189,12 @@ const CLIENTS_DATA = {
         `
     },
 
-    kerenBneiYeshivot: {
-        name: "Keren Bnei Yeshivot",
-        image: KerenBneiYeshivot,
-        darkBg: false,
-        link: "https://www.kerenby.co.il",
-    },
+    // kerenBneiYeshivot: {
+    //     name: "Keren Bnei Yeshivot",
+    //     image: KerenBneiYeshivot,
+    //     darkBg: false,
+    //     link: "https://www.kerenby.co.il",
+    // },
 
     interpaz: {
         name: "Interpaz",
@@ -313,12 +313,12 @@ const CLIENTS_DATA = {
         `
     },
 
-    family: {
-        name: "Family",
-        image: Family,
-        darkBg: true,
-        link: "https://www.familyline.co.il",
-    },
+    // family: {
+    //     name: "Family",
+    //     image: Family,
+    //     darkBg: true,
+    //     link: "https://www.familyline.co.il",
+    // },
 }
 
 export {
