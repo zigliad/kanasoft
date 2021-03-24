@@ -300,7 +300,7 @@ const CLIENTS_DATA = {
     mokedAmnor: {
         name: "Moked Amnor",
         image: MokedAmnor,
-        darkBg: true,
+        darkBg: false,
         link: "https://amnor.co.il",
         info:
             `
