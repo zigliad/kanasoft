@@ -95,7 +95,7 @@ const TEAM_DATA = [
         job: "Advisors",
         info: `
         BDO Israel, one of the top accounting and consulting firms in Israel,
-        has been the consulting accompanying the Beyond-Kanasoft company.
+        has been the consulting accompanying the Beyond-Cannasoft company.
         `,
         image: BDO
     },

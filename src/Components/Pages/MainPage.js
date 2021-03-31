@@ -1,6 +1,6 @@
 import 'styles/main.css';
 import { useEffect, useRef } from 'react';
-import Logo from 'Images/Other/kanasoft-logo.svg';
+import Logo from 'Images/Other/cannasoft-logo.svg';
 import { Grid } from '@material-ui/core';
 import News from 'Components/Other/News';
 import { FiArrowDown } from 'react-icons/fi';
@@ -18,7 +18,7 @@ import FadeIn from 'react-fade-in';
 import { UIStore } from 'UIStore';
 import { useHistory } from 'react-router-dom';
 import { LINKS_DATA, STORY_URI, COMPANY_NAME } from 'Config/config';
-import { KANASOFT_STOCK_SYMBOL } from 'Config/stock';
+import { CANNASOFT_STOCK_SYMBOL } from 'Config/stock';
 
 export default function MainPage() {
 
@@ -64,7 +64,7 @@ export default function MainPage() {
                                     <p className="text-6xl md:text-8xl mt-2">{COMPANY_NAME}</p>
                                     <div className="flex flex-row justify-between">
                                         <button className="pl-1 focus:outline-none focus:border-0" onClick={toStock}>
-                                            <p className="text-xl font-medium text-ks-green hover:text-ks-orange transition mt-2">{KANASOFT_STOCK_SYMBOL}</p>
+                                            <p className="text-xl font-medium text-ks-green hover:text-ks-orange transition mt-2">{CANNASOFT_STOCK_SYMBOL}</p>
                                         </button>
                                         <a target="_blank" href={STORY_URI}
                                             className="text-xl font-medium text-ks-green hover:text-ks-orange transition mt-2">
@@ -96,7 +96,7 @@ export default function MainPage() {
                 <PagePreview title="Hi, Investors" buttonTitle="Let's talk business" link="/stock" undrawComponent={UndrawBusinessDeal} />
             </div>
             <div className="page-padding">
-                <PagePreview title="Kanasoft In The Press" buttonTitle="Take a look" link="/press" undrawComponent={UndrawMobileBrowsers} opposite />
+                <PagePreview title="Cannasoft In The Press" buttonTitle="Take a look" link="/press" undrawComponent={UndrawMobileBrowsers} opposite />
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
                 <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undrawComponent={UndrawArtLover} />

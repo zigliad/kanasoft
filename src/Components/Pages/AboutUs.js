@@ -16,7 +16,7 @@ export default function AboutUs() {
 
 	return (
 		<div className="page-padding">
-			<PageHeader title="About Kanasoft" undrawComponent={UndrawHighFive} />
+			<PageHeader title="About Cannasoft" undrawComponent={UndrawHighFive} />
 			<div className="space-y-24 px-6 md:px-24 lg:px-36">
 				{data}
 			</div>

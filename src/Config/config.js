@@ -7,7 +7,7 @@ import PressReleases from "Components/Pages/PressReleases";
 import StockPage from "Components/Pages/StockPage";
 import OurClients from "Components/Pages/OurClients";
 
-const COMPANY_NAME = "KANASOFT"
+const COMPANY_NAME = "CANNASOFT"
 
 const LINKS_DATA = {
 
