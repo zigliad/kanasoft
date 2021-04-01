@@ -8,7 +8,7 @@ import axios from 'axios';
 function NewsCard(props) {
     const { title, message, link, imgUri } = props.data
     return (
-        <div className="bg-gray-200 rounded-xl shadow-lg w-full max-h-96 overflow-auto">
+        <div className="bg-gray-200 rounded-xl shadow-lg w-full max-h-96 overflow-auto relative">
             {
                 imgUri &&
                 <div className="h-44 rounded-t-xl">
@@ -18,21 +18,21 @@ function NewsCard(props) {
             }
             <div className="p-8">
                 {
+                    link &&
+                    <div className="mb-6">
+                        <a target="_blank" href={link}
+                            className="no-underline hover:underline text-ks-purple font-medium">
+                            Read the article
+                        </a>
+                    </div>
+                }
+                {
                     title &&
                     <p className="text-2xl font-medium">{title}</p>
                 }
                 {
                     message &&
                     <p className="text-lg mt-2">{message}</p>
-                }
-                {
-                    link &&
-                    <div className="mt-6">
-                        <a target="_blank" href={link}
-                            className="no-underline hover:underline text-ks-purple font-medium">
-                            Read more
-                        </a>
-                    </div>
                 }
             </div>
         </div>

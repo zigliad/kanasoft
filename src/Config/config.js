@@ -72,7 +72,7 @@ const NAV_BAR_DATA = [
 ]
 
 const NEWS_URI = `https://raw.githubusercontent.com/kanasoft-news/news/main/news.json`
-const STORY_URI = `https://stories.storydoc.com/preview/2c16e06ccb3794a7/KANASOFT`
+const STORY_URI = `https://tinyurl.com/yg5dbzky`
 
 export {
     COMPANY_NAME,

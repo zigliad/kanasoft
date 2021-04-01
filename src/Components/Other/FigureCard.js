@@ -10,7 +10,7 @@ export default function FigureCard({ figure }) {
                     <img className="inline object-cover w-36 h-36 rounded-full ring-4 ring-ks-purple ring-offset-4" src={figure.image} alt="" />
                 </Grid>
                 <Grid item xs={12}>
-                    <div className="pt-6 md:p-8 text-center space-y-4">
+                    <div className="pt-6 md:p-4 text-center space-y-4">
                         <p className="text-lg font-semibold">
                             {figure.info}
                         </p>

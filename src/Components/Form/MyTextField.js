@@ -1,6 +1,6 @@
 import 'styles/main.css';
 
-export default function MyTextField({ label, placehodler, value, setValue, containerClassName="", inputClassName="" }) {
+export default function MyTextField({ label, placehodler, value, setValue, containerClassName = "", inputClassName = "" }) {
 
     const onChange = (event) => {
         setValue(event.target.value)

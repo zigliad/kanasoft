@@ -11,7 +11,7 @@ export default function Farm() {
             <div className='player-wrapper'>
                 <ReactPlayer
                     className='react-player'
-                    url='https://www.youtube.com/watch?v=B5gNzoeCL5Y'
+                    url='https://www.youtube.com/watch?v=We_sYoNiZro'
                     width='100%'
                     height='100%'
                 />

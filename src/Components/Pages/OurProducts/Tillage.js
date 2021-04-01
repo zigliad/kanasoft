@@ -4,6 +4,7 @@ import Carousel from 'react-multi-carousel';
 import Img1 from 'Images/Knowledge/knowledge_1.png';
 import Img2 from 'Images/Knowledge/knowledge_2.png';
 import Img3 from 'Images/Knowledge/knowledge_3.png';
+import Img4 from 'Images/Knowledge/knowledge_4.png';
 
 export default function Tillage() {
 
@@ -26,7 +27,7 @@ export default function Tillage() {
         }
     };
 
-    const data = [Img1, Img2, Img3]
+    const data = [Img1, Img2, Img3, Img4]
     const content = data.map((theImage, index) => <img src={theImage} className="pointer-events-none" />)
 
     return (

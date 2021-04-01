@@ -5,6 +5,7 @@ import MotiMaram from "Images/Team/MotiMaram.jpg"
 import DanRothberg from "Images/Team/DanRothberg.jpg"
 import HaroldWolkin from "Images/Team/HaroldWolkin.jpg"
 import GabiKabazo from "Images/Team/GabiKabazo.jpg"
+import GilShapira from "Images/Team/GilShapira.jpg"
 import BDO from "Images/Team/BDO.jpg"
 
 const TEAM_DATA = [
@@ -89,6 +90,20 @@ const TEAM_DATA = [
         listed on the TSX, TSXV. CSE and the OTC markets.
         `,
         image: DanRothberg
+    },
+    {
+        name: "Gil Shapira",
+        job: "Greenhouse Facility Project Manager",
+        info: `
+        Engineer Gil Shapira brings 30 years of prior experience in planning, managing, and implementing complex
+        engineering projects. Operating both locally and internationally, Gil continues to provide customized services
+        to the pharmaceutical, biotechnological, medical device, health and food industries. Thousands of square meters
+        of production facilities, clean rooms, laboratories, and production equipment have been Managed designed and
+        constructed By Gil Shapira beginning with basis of design to detailed design, construction, commissioning and
+        finally handover.  All have been certified by the relevant authorities, such as the FDA, EMEA, GMP, GLP, FACT,
+        NETCORD, JACIE, and the Israeli Ministry of Health.
+        `,
+        image: GilShapira
     },
     {
         name: "BDO Israel",

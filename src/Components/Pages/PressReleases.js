@@ -8,7 +8,7 @@ export default function PressReleases() {
 	return (
 		<div className="page-padding">
 			<PageHeader title="Press Releases" undrawComponent={UndrawBrowserStats} />
-            <News />
+			<News />
 		</div>
 	);
 }

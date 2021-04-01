@@ -9,7 +9,7 @@ export default function OurTeam() {
 
     const figures = TEAM_DATA.map(figure => {
         return (
-            <Grid item xs={12} md={6} lg={4}>
+            <Grid item xs={12} md={6}>
                 <FigureCard figure={figure} />
             </Grid>
         )

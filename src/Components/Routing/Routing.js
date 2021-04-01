@@ -28,10 +28,10 @@ export default function Routing() {
 				<Switch>
 					{switchData}
 
-					<Route exact path="/cannasoft">
+					<Route path="/">
 						<Redirect to="/" />
 					</Route>
-					<Route component={PageNotFound} />
+					{/* <Route component={PageNotFound} /> */}
 				</Switch>
 				<Footer />
 			</Router>
