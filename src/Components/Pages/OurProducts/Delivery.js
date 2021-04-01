@@ -1,11 +1,11 @@
 import Carousel from 'react-multi-carousel';
 import 'styles/main.css';
 
-import Img1 from 'Images/Delivery/ks-delivery-1.jpg';
-import Img2 from 'Images/Delivery/ks-delivery-2.jpg';
-import Img3 from 'Images/Delivery/ks-delivery-3.jpg';
-import Img4 from 'Images/Delivery/ks-delivery-4.jpg';
-import Img5 from 'Images/Delivery/ks-delivery-5.jpg';
+import Img1 from 'Images/Delivery/cs-delivery-1.jpg';
+import Img2 from 'Images/Delivery/cs-delivery-2.jpg';
+import Img3 from 'Images/Delivery/cs-delivery-3.jpg';
+import Img4 from 'Images/Delivery/cs-delivery-4.jpg';
+import Img5 from 'Images/Delivery/cs-delivery-5.jpg';
 
 export default function Delivery() {
 

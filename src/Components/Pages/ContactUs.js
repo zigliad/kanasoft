@@ -30,14 +30,12 @@ function ContactForm() {
         if (valid) {
             emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
                 .then(function (response) {
-                    console.log("SUCCESS")
                     setFullname("")
                     setFrom("")
                     setMessage("")
                     setModalMessage("Mail sent! 💌")
                     setOpen(true)
                 }, function (error) {
-                    console.log("FAILURE")
                     setModalMessage("Some error occured 😕")
                     setOpen(true)
                 });

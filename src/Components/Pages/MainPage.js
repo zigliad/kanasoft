@@ -42,9 +42,7 @@ export default function MainPage() {
 
     useEffect(() => {
         return () => {
-            console.log(history.action)
             if (history.action === "POP") {
-                console.log("ASOFIAOFI")
                 UIStore.update(s => {
                     s.transparentNavbar = false;
                 })
@@ -61,7 +59,7 @@ export default function MainPage() {
                             <div className="text-white h-auto font-bold break-words flex flex-col justify-center items-center w-full mt-14 md:mt-0">
                                 <div className="">
                                     <p className="text-4xl">We Are</p>
-                                    <p className="text-6xl md:text-8xl mt-2">{COMPANY_NAME}</p>
+                                    <p className="text-5xl md:text-7xl 2xl:text-8xl mt-2">{COMPANY_NAME}</p>
                                     <div className="flex flex-row justify-between">
                                         <button className="pl-1 focus:outline-none focus:border-0" onClick={toStock}>
                                             <p className="text-xl font-medium text-ks-green hover:text-ks-orange transition mt-2">{CANNASOFT_STOCK_SYMBOL}</p>
