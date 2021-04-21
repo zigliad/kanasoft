@@ -1,6 +1,10 @@
-const SERVICE_ID = 'service_gmail'
+// const SERVICE_ID = 'service_gmail'
+// const TEMPLATE_ID = 't_cannasoft_contact'
+// const USER_ID = 'user_0JEmGfhbt6kwUzyWrRyP7'
+
+const SERVICE_ID = 'service_cannasoft_smtp'
 const TEMPLATE_ID = 't_cannasoft_contact'
-const USER_ID = 'user_0JEmGfhbt6kwUzyWrRyP7'
+const USER_ID = 'user_FcVMECwyFTkIkA6LYCRC2'
 
 const REGEX = {
     fullname: /^[a-zA-Z ]+$/,

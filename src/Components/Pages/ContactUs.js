@@ -7,19 +7,24 @@ import MyButton from 'Components/Form/MyButton';
 import FadeIn from 'react-fade-in';
 import emailjs from 'emailjs-com';
 import { REGEX, SERVICE_ID, TEMPLATE_ID, USER_ID } from 'Config/mail';
-import 'react-responsive-modal/styles.css';
-import { Modal } from 'react-responsive-modal';
+import Dialog from '@material-ui/core/Dialog';
+import { createModal } from 'react-modal-promise'
+import ModalFactory from "react-modal-promise";
+
+const MessageModal = createModal(({ isOpen, onResolve, message }) => (
+    <Dialog open={isOpen} onClose={onResolve}>
+        <p className="font-medium m-4">{message}</p>
+    </Dialog>
+))
 
 function ContactForm() {
 
     const [fullname, setFullname] = useState("")
     const [from, setFrom] = useState("")
     const [message, setMessage] = useState("")
-
-    const [open, setOpen] = useState(false);
-    const [modalMessage, setModalMessage] = useState("");
-
-    const sendMail = () => {
+    const [sending, setSending] = useState(false)
+    
+    const sendMail = async () => {
         const templateParams = {
             fullname: fullname,
             from: from,
@@ -28,20 +33,20 @@ function ContactForm() {
 
         const [valid, errorMessage] = checkValidity()
         if (valid) {
+            setSending(true)
             emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID)
-                .then(function (response) {
-                    setFullname("")
-                    setFrom("")
-                    setMessage("")
-                    setModalMessage("Mail sent! 💌")
-                    setOpen(true)
-                }, function (error) {
-                    setModalMessage("Some error occured 😕")
-                    setOpen(true)
-                });
+            .then(async function (response) {
+                setSending(false)
+                setFullname("")
+                setFrom("")
+                setMessage("")
+                await MessageModal({ message: "Mail sent! 💌"})
+            }, async function (error) {
+                setSending(false)
+                await MessageModal({ message: "Some error occured 😕"})
+            });
         } else {
-            setModalMessage(String(errorMessage))
-            setOpen(true)
+            await MessageModal({ message: String(errorMessage)})
         }
     }
 
@@ -74,14 +79,13 @@ function ContactForm() {
                         <MyTextArea label="Message" placehodler="Write your message here..." value={message} setValue={setMessage} containerClassName="w-full" inputClassName="w-full" />
                     </Grid>
                     <Grid item xs={12}>
-                        <MyButton title={"Send"} onClick={sendMail} className="w-full mt-4 p-5" />
+                        {!sending && <MyButton title={"Send"} onClick={sendMail} className="w-full mt-4 p-5" />}
+                        {sending && <p>sending...</p>}
                     </Grid>
                 </Grid>
             </div>
 
-            <Modal open={open} onClose={() => setOpen(false)} center showCloseIcon={false}>
-                <h2>{modalMessage}</h2>
-            </Modal>
+            <ModalFactory />
         </form>
     );
 }

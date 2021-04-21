@@ -3,7 +3,6 @@ import 'styles/main.css';
 import { useBreakpoints } from "react-use-breakpoints";
 import MyButton from 'Components/Form/MyButton';
 import { useHistory } from 'react-router-dom';
-import FadeIn from 'react-fade-in';
 import { UIStore } from 'UIStore';
 import { LINKS_DATA } from 'Config/config';
 

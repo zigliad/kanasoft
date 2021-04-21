@@ -3,7 +3,6 @@ import { useEffect, useRef } from 'react';
 import Logo from 'Images/Other/cannasoft-logo.svg';
 import { Grid } from '@material-ui/core';
 import News from 'Components/Other/News';
-import { FiArrowDown } from 'react-icons/fi';
 import PagePreview from 'Components/Other/PagePreview';
 import { UndrawInstantSupport } from 'react-undraw-illustrations';
 import { UndrawArtLover } from 'react-undraw-illustrations';
@@ -21,9 +20,6 @@ import { LINKS_DATA, STORY_URI, COMPANY_NAME } from 'Config/config';
 import { CANNASOFT_STOCK_SYMBOL } from 'Config/stock';
 
 export default function MainPage() {
-
-    const myRef = useRef(null)
-    const executeScroll = () => myRef.current.scrollIntoView({ behavior: 'smooth' })
 
     const animationTransition = 3000
 
@@ -84,13 +80,8 @@ export default function MainPage() {
                         </FadeIn>
                     </Grid>
                 </Grid>
-                <div className="absolute invisible md:visible md:bottom-12 animate-bounce">
-                    <button onClick={executeScroll} className="focus:outline-none focus:border-0">
-                        <FiArrowDown className="text-white w-6 h-6" />
-                    </button>
-                </div>
             </div>
-            <div className="page-padding bg-gray-200 dark:bg-gray-600" ref={myRef}>
+            <div className="page-padding bg-gray-200 dark:bg-gray-600">
                 <PagePreview title="Hi, Investors" buttonTitle="Let's talk business" link="/stock" undrawComponent={UndrawBusinessDeal} />
             </div>
             <div className="page-padding">

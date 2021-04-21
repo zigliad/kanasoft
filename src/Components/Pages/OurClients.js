@@ -3,14 +3,33 @@ import { UndrawExperts } from 'react-undraw-illustrations';
 import PageHeader from 'Components/Other/PageHeader';
 import { CLIENTS_DATA } from 'Config/clients';
 import { useState } from 'react';
-import PureModal from 'react-pure-modal';
-import 'react-pure-modal/dist/react-pure-modal.min.css';
+import Dialog from '@material-ui/core/Dialog';
+import { createModal } from 'react-modal-promise'
+import ModalFactory from "react-modal-promise";
 
-function ClientCard({ client, onClick }) {
+const ClientModal = createModal(({ isOpen, onResolve, client }) => (
+    <Dialog open={isOpen} onClose={onResolve}>
+        <div className="flex flex-col p-8 space-y-4">
+            <div className="flex flex-row justify-between items-center">
+            <p className="gradient-title">{client.longName || client.name}</p>
+            <button className="text-2xl" onClick={onResolve}>×</button>
+                </div>
+            <p className="info-text">{client.info}</p>
+        </div>
+    </Dialog>
+))
+
+function ClientCard({ client }) {
+
+    const showModal = async () => {
+        if (client.info) {
+            await ClientModal({client: client})
+        }
+    }
 
     return (
         // Use in case of additional info:
-        <button onClick={() => onClick(client)} className={"p-4 shadow-lg rounded-lg hover:shadow-xl transition " + (client.darkBg ? "bg-gray-700" : "bg-gray-200")}>
+        <button onClick={showModal} className={"p-4 shadow-lg rounded-lg hover:shadow-xl transition " + (client.darkBg ? "bg-gray-700" : "bg-gray-200")}>
             <div className={"flex flex-col items-center space-y-4"}>
                 <img src={client.image} className="max-w-24 h-24 object-fit" />
                 <p className={"text-xl font-medium " + (client.darkBg ? "text-gray-200" : "text-gray-600")}>{client.name}</p>
@@ -29,17 +48,7 @@ function ClientCard({ client, onClick }) {
 
 export default function OurClients() {
 
-    const [modalOpen, setModalOpen] = useState(false)
-    const [chosenClient, setChosenClient] = useState({})
-
-    const clientClicked = (client) => {
-        if (client.info) {
-            setChosenClient(client)
-            setModalOpen(true)
-        }
-    }
-
-    const data = Object.values(CLIENTS_DATA).map((client, index) => <ClientCard client={client} onClick={clientClicked} key={index} />);
+    const data = Object.values(CLIENTS_DATA).map((client, index) => <ClientCard client={client} key={index} />);
 
     return (
         <div className="page-padding">
@@ -52,19 +61,8 @@ export default function OurClients() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
                 {data}
             </div>
-            <PureModal
-                isOpen={modalOpen}
-                onClose={() => {
-                    setModalOpen(false)
-                    return true
-                }}
-                width="500px"
-            >
-                <div className="flex flex-col p-8 space-y-4">
-                    <p className="gradient-title">{chosenClient.longName || chosenClient.name}</p>
-                    <p className="info-text">{chosenClient.info}</p>
-                </div>
-            </PureModal>
+
+            <ModalFactory />
         </div>
     );
 }
