@@ -1,6 +1,5 @@
 import 'styles/main.css';
 import PageHeader from 'Components/Other/PageHeader';
-import { UndrawTaken } from 'react-undraw-illustrations';
 import { useHistory } from 'react-router-dom';
 import { UIStore } from 'UIStore';
 import MyButton from 'Components/Form/MyButton';
@@ -18,7 +17,7 @@ export default function PageNotFound() {
 
     return (
         <div className="page-padding">
-            <PageHeader title="Oops! 404" undrawComponent={UndrawTaken} />
+            <PageHeader title="Oops! 404" undraw="taken" />
             <div className="flex flex-col items-center">
                 <MyButton title={"Go back"} onClick={toHome} />
             </div>

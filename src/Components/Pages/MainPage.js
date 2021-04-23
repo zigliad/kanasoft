@@ -1,18 +1,8 @@
 import 'styles/main.css';
 import { useEffect, useRef } from 'react';
 import Logo from 'Images/Other/cannasoft-logo.svg';
-import { Grid } from '@material-ui/core';
-import News from 'Components/Other/News';
+import Grid from '@material-ui/core/Grid';
 import PagePreview from 'Components/Other/PagePreview';
-import { UndrawInstantSupport } from 'react-undraw-illustrations';
-import { UndrawArtLover } from 'react-undraw-illustrations';
-import { UndrawTeamSpirit } from 'react-undraw-illustrations';
-import { UndrawMessaging } from 'react-undraw-illustrations';
-import { UndrawPresentation } from 'react-undraw-illustrations';
-import { UndrawBusinessDeal } from 'react-undraw-illustrations';
-import { UndrawBrowser } from 'react-undraw-illustrations';
-import { UndrawExperts } from 'react-undraw-illustrations';
-import { UndrawMobileBrowsers } from 'react-undraw-illustrations';
 import FadeIn from 'react-fade-in';
 import { UIStore } from 'UIStore';
 import { useHistory } from 'react-router-dom';
@@ -82,25 +72,25 @@ export default function MainPage() {
                 </Grid>
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
-                <PagePreview title="Hi, Investors" buttonTitle="Let's talk business" link="/stock" undrawComponent={UndrawBusinessDeal} />
+                <PagePreview title="Hi, Investors" buttonTitle="Let's talk business" link="/stock" undraw="business_deal" />
             </div>
             <div className="page-padding">
-                <PagePreview title="Cannasoft In The Press" buttonTitle="Take a look" link="/press" undrawComponent={UndrawMobileBrowsers} opposite />
+                <PagePreview title="Cannasoft In The Press" buttonTitle="Take a look" link="/press" undraw="mobile_browsers" opposite />
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
-                <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undrawComponent={UndrawArtLover} />
+                <PagePreview title="Check Our Products" buttonTitle="Take a tour" link="/products" undraw="art_lover" />
             </div>
             <div className="page-padding">
-                <PagePreview title="Meet Our Clients" buttonTitle="Take a look" link="/clients" undrawComponent={UndrawExperts} opposite />
+                <PagePreview title="Meet Our Clients" buttonTitle="Take a look" link="/clients" undraw="experts" opposite />
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
-                <PagePreview title="Meet Our Heroes" buttonTitle="Our team" link="/team" undrawComponent={UndrawInstantSupport} />
+                <PagePreview title="Meet Our Heroes" buttonTitle="Our team" link="/team" undraw="instant_support" />
             </div>
             <div className="page-padding">
-                <PagePreview title="Know Us Better" buttonTitle="About us" link="/about" undrawComponent={UndrawTeamSpirit} opposite />
+                <PagePreview title="Know Us Better" buttonTitle="About us" link="/about" undraw="team_spirit" opposite />
             </div>
             <div className="page-padding bg-gray-200 dark:bg-gray-600">
-                <PagePreview title="Keep In Touch" buttonTitle="Contact us" link="/contact" undrawComponent={UndrawMessaging} />
+                <PagePreview title="Keep In Touch" buttonTitle="Contact us" link="/contact" undraw="personal_information" />
             </div>
         </div>
     );

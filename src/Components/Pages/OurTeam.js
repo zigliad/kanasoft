@@ -2,7 +2,6 @@ import 'styles/main.css';
 import Grid from '@material-ui/core/Grid';
 import FigureCard from 'Components/Other/FigureCard';
 import { TEAM_DATA } from 'Config/team';
-import { UndrawHangOut } from 'react-undraw-illustrations';
 import PageHeader from 'Components/Other/PageHeader';
 
 export default function OurTeam() {
@@ -17,7 +16,7 @@ export default function OurTeam() {
 
     return (
         <div className="page-padding">
-            <PageHeader title="Meet Our People" undrawComponent={UndrawHangOut} />
+            <PageHeader title="Meet Our People" undraw="hang_out" />
             <Grid container spacing={4}>
                 {figures}
             </Grid>

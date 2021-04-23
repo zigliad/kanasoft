@@ -1,12 +1,13 @@
-import { Grid } from '@material-ui/core';
+import Grid from '@material-ui/core/Grid';
 import 'styles/main.css';
 import { useBreakpoints } from "react-use-breakpoints";
 import MyButton from 'Components/Form/MyButton';
 import { useHistory } from 'react-router-dom';
 import { UIStore } from 'UIStore';
 import { LINKS_DATA } from 'Config/config';
+import Undraw from 'react-undraw';
 
-export default function PagePreview({ title, undrawComponent, buttonTitle = undefined, link = undefined, opposite = false }) {
+export default function PagePreview({ title, undraw, buttonTitle = undefined, link = undefined, opposite = false }) {
 
     const history = useHistory();
     const linkTo = () => {
@@ -28,12 +29,10 @@ export default function PagePreview({ title, undrawComponent, buttonTitle = unde
         xl: 640
     }
 
-    const UndrawComponent = undrawComponent
-
     const imagePart = (
         <Grid item xs={12} md={6} lg={5}>
             <div className="p-6">
-                <UndrawComponent height={`${breakPointToImageSize[breakpoint]}`} />
+                <Undraw name={undraw} height={`${breakPointToImageSize[breakpoint]}`} />
             </div>
         </Grid>
     );

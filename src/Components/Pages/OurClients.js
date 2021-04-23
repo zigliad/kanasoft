@@ -1,8 +1,6 @@
 import 'styles/main.css';
-import { UndrawExperts } from 'react-undraw-illustrations';
 import PageHeader from 'Components/Other/PageHeader';
 import { CLIENTS_DATA } from 'Config/clients';
-import { useState } from 'react';
 import Dialog from '@material-ui/core/Dialog';
 import { createModal } from 'react-modal-promise'
 import ModalFactory from "react-modal-promise";
@@ -52,7 +50,7 @@ export default function OurClients() {
 
     return (
         <div className="page-padding">
-            <PageHeader title="Our Clients" undrawComponent={UndrawExperts} />
+            <PageHeader title="Our Clients" undraw="experts" />
             <p className="info-text">
                 Successfully running the operations of more than 400 organizations
                 worldwide. Generating profit each year from its establishment. Below
