@@ -74,10 +74,13 @@ const NAV_BAR_DATA = [
 const NEWS_URI = `https://raw.githubusercontent.com/kanasoft-news/news/main/news.json`
 const STORY_URI = `https://tinyurl.com/yg5dbzky`
 
+const TRACKING_ID = "UA-195443225-1"
+
 export {
     COMPANY_NAME,
     NAV_BAR_DATA,
     LINKS_DATA,
     NEWS_URI,
-    STORY_URI
+    STORY_URI,
+    TRACKING_ID
 }
