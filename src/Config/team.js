@@ -1,17 +1,18 @@
 import AvnerTal from "Images/Team/AvnerTal.jpg"
-import YiftahBenYaackov from "Images/Team/YiftahBenYaackov.jpg"
-import RomanBrenner from "Images/Team/RomanBrenner.jpg"
-import MotiMaram from "Images/Team/MotiMaram.jpg"
+import BDO from "Images/Team/BDO.jpg"
 import DanRothberg from "Images/Team/DanRothberg.jpg"
-import HaroldWolkin from "Images/Team/HaroldWolkin.jpg"
 import GabiKabazo from "Images/Team/GabiKabazo.jpg"
 import GilShapira from "Images/Team/GilShapira.jpg"
-import BDO from "Images/Team/BDO.jpg"
+import HaroldWolkin from "Images/Team/HaroldWolkin.jpg"
+import MotiMaram from "Images/Team/MotiMaram.jpg"
+import RomanBrenner from "Images/Team/RomanBrenner.jpg"
+import StefaniaSzabo from "Images/Team/StefaniaSzabo.jpg"
+import YiftahBenYaackov from "Images/Team/YiftahBenYaackov.jpg"
 
 const TEAM_DATA = [
     {
         name: "Moti Maram",
-        job: "President, CEO and Director",
+        job: "President and Director",
         info: `
         In 1986, together with a partner company, he founded a computer company that mainly provided services to
         EXATEC-compliant IBM AS 400 computers and subsequently sales and service to the first PCs in the world.
@@ -19,6 +20,20 @@ const TEAM_DATA = [
         established a software company that manufactures CRM and ERP management software called BENEFIT in 2000.
         `,
         image: MotiMaram
+    },
+    {
+        name: "Yiftah Ben Yaackov",
+        job: "CEO and Director",
+        info: `
+            Professional lawyer since 2004. Specialized in real estate related issues on all
+            aspects of it including real estate corporations, complex sales transactions,
+            real estate unions, real estate taxation. Notary License holder since 2014.
+            Managed large projects of tens of thousands Square meters for a total amount of
+            above 400 million NIS. At the last 5 years yftah has assembled the business activity
+            of 2 of the largest medical cannabis company's in Israel and has an enormous
+            experience and knowledge in this field.
+        `,
+        image: YiftahBenYaackov
     },
     {
         name: "Avner Tal",
@@ -32,20 +47,6 @@ const TEAM_DATA = [
         image: AvnerTal,
     },
     {
-        name: "Yiftah Ben Yaackov",
-        job: "COO and Director",
-        info: `
-            Professional lawyer since 2004. Specialized in real estate related issues on all
-            aspects of it including real estate corporations, complex sales transactions,
-            real estate unions, real estate taxation. Notary License holder since 2014.
-            Managed large projects of tens of thousands Square meters for a total amount of
-            above 400 million NIS. At the last 5 years yftah has assembled the business activity
-            of 2 of the largest medical cannabis company's in Israel and has an enormous
-            experience and knowledge in this field.
-        `,
-        image: YiftahBenYaackov
-    },
-    {
         name: "Gabi Kabazo",
         job: "CFO and Director",
         info: `
@@ -56,18 +57,28 @@ const TEAM_DATA = [
         `,
         image: GabiKabazo
     },
-
     {
-        name: "Roman Brenner",
+        name: "Stefánia Szabó",
         job: "Director",
         info: `
-            Retired business executive. Managed several manufacturing operations for 
-            public and private companies operating in the NAFTA region and internationally.
-            Experience in international trade. Sat on Advisory Boards for private companies
-            and Government Advisory Boards.
+        Stefánia is a former diplomat, a charismatic government services, management and public relations professional,
+        with skills in all areas of bilateral and multilateral relationship management, diplomacy, trade and HR honed over
+        25 years of progressive experience. She is an international lawyer by profession, and serves as member of the executive
+        committee of the Canada-Israel Chamber of Commerce.
         `,
-        image: RomanBrenner
+        image: StefaniaSzabo
     },
+    // {
+    //     name: "Roman Brenner",
+    //     job: "Director",
+    //     info: `
+    //         Retired business executive. Managed several manufacturing operations for 
+    //         public and private companies operating in the NAFTA region and internationally.
+    //         Experience in international trade. Sat on Advisory Boards for private companies
+    //         and Government Advisory Boards.
+    //     `,
+    //     image: RomanBrenner
+    // },
     {
         name: "Harold Wolkin",
         job: "Director",
