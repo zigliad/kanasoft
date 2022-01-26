@@ -79,7 +79,13 @@ export default function News() {
 						return {
 							title: "Continuous Disclosure",
 							link: record.url,
-							message: record.public_date,
+							message: new Date(
+								record.public_date
+							).toLocaleDateString("en-US", {
+								year: "numeric",
+								month: "long",
+								day: "numeric",
+							}),
 						};
 					});
 				setData(finalData);

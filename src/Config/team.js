@@ -61,10 +61,11 @@ const TEAM_DATA = [
 		name: "Dr. Stefánia Szabó",
 		job: "Director",
 		info: `
-        Stefánia is a former diplomat, a charismatic government services, management and public relations professional,
-        with skills in all areas of bilateral and multilateral relationship management, diplomacy, trade and HR honed over
-        25 years of progressive experience. She is an international lawyer by profession, and serves as member of the executive
-        committee of the Canada-Israel Chamber of Commerce.
+		Stefánia is the Vice President of Pace Law Firm and Director of International Relations at
+		Pace Global Advantage in Toronto, Canada. She is a former diplomat, a charismatic government services,
+		management and public relations professional with 25 years of progressive experience.
+		She is an international lawyer by profession, and serves as member of the executive committee 
+		of the Canada-Israel Chamber of Commerce.
         `,
 		image: StefaniaSzabo,
 	},
