@@ -6,6 +6,7 @@ import GilShapira from "Images/Team/GilShapira.jpg";
 import HaroldWolkin from "Images/Team/HaroldWolkin.jpg";
 import MotiMaram from "Images/Team/MotiMaram.jpg";
 import RomanBrenner from "Images/Team/RomanBrenner.jpg";
+import NivShirazi from "Images/Team/NivShirazi.jpg";
 import StefaniaSzabo from "Images/Team/StefaniaSzabo.jpg";
 import YiftahBenYaackov from "Images/Team/YiftahBenYaackov.jpg";
 
@@ -116,6 +117,16 @@ const TEAM_DATA = [
         NETCORD, JACIE, and the Israeli Ministry of Health.
         `,
 		image: GilShapira,
+	},
+	{
+		name: "Niv Shirazi",
+		job: "",
+		info: `
+        Niv is a business professional with strong financial acumen. Since 2018, Mr. Shirazi serves as
+		Chief Operating Officer with H.N. Win Ltd,, an Israeli real estate firm. Mr. Shirazi received
+		a B.A. in Business Administration and Accounting from the Ono Academic College in Kiryat Ono, Israel.
+        `,
+		image: NivShirazi,
 	},
 	{
 		name: "BDO Israel",
