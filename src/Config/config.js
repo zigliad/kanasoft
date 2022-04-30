@@ -6,6 +6,7 @@ import ContactUs from "Components/Pages/ContactUs";
 import PressReleases from "Components/Pages/PressReleases";
 import StockPage from "Components/Pages/StockPage";
 import OurClients from "Components/Pages/OurClients";
+import Investors from "Components/Pages/Investors";
 
 const COMPANY_NAME = "CANNASOFT";
 
@@ -46,10 +47,16 @@ const LINKS_DATA = {
 		component: OurClients,
 	},
 
-	stock: {
-		to: "/stock",
-		title: "Stock",
-		component: StockPage,
+	// stock: {
+	// 	to: "/stock",
+	// 	title: "Stock",
+	// 	component: StockPage,
+	// },
+
+	investors: {
+		to: "/investors",
+		title: "Investors",
+		component: Investors,
 	},
 
 	// Keep last!
@@ -61,7 +68,7 @@ const LINKS_DATA = {
 };
 
 const NAV_BAR_DATA = [
-	LINKS_DATA.stock,
+	LINKS_DATA.investors,
 	LINKS_DATA.press,
 	LINKS_DATA.products,
 	LINKS_DATA.clients,

@@ -23,7 +23,7 @@ const TEAM_DATA = [
 		image: MotiMaram,
 	},
 	{
-		name: "Yiftah Ben Yaackov",
+		name: "Yftah Ben Yaackov",
 		job: "CEO and Director",
 		info: `
             Professional lawyer since 2004. Specialized in real estate related issues on all
@@ -93,6 +93,16 @@ const TEAM_DATA = [
 		image: HaroldWolkin,
 	},
 	{
+		name: "Niv Shirazi",
+		job: "Director",
+		info: `
+        Niv is a business professional with strong financial acumen. Since 2018, Mr. Shirazi serves as
+		Chief Operating Officer with H.N. Win Ltd,, an Israeli real estate firm. Mr. Shirazi received
+		a B.A. in Business Administration and Accounting from the Ono Academic College in Kiryat Ono, Israel.
+        `,
+		image: NivShirazi,
+	},
+	{
 		name: "Daniel Rothberg",
 		job: "Corporate Secretary",
 		info: `
@@ -117,16 +127,6 @@ const TEAM_DATA = [
         NETCORD, JACIE, and the Israeli Ministry of Health.
         `,
 		image: GilShapira,
-	},
-	{
-		name: "Niv Shirazi",
-		job: "",
-		info: `
-        Niv is a business professional with strong financial acumen. Since 2018, Mr. Shirazi serves as
-		Chief Operating Officer with H.N. Win Ltd,, an Israeli real estate firm. Mr. Shirazi received
-		a B.A. in Business Administration and Accounting from the Ono Academic College in Kiryat Ono, Israel.
-        `,
-		image: NivShirazi,
 	},
 	{
 		name: "BDO Israel",
