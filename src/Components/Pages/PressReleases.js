@@ -1,6 +1,6 @@
-import 'styles/main.css';
-import PageHeader from 'Components/Other/PageHeader';
-import News from 'Components/Other/News';
+import "styles/main.css";
+import PageHeader from "Components/Other/PageHeader";
+import News from "Components/Other/News";
 
 export default function PressReleases() {
 	return (

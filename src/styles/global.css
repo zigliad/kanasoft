@@ -3,37 +3,37 @@
 @tailwind utilities;
 
 @layer components {
-    .page-padding {
-        @apply p-6 md:p-12 lg:p-16
-    }
+	.page-padding {
+		@apply p-6 md:p-12 lg:p-16;
+	}
 
-    .gradient-title {
-        @apply text-4xl md:text-5xl text-gradient bg-gradient-to-r from-ks-purple to-ks-gradient-purple font-bold inline-block
-    }
+	.gradient-title {
+		@apply text-4xl md:text-5xl text-gradient bg-gradient-to-r from-ks-purple to-ks-gradient-purple font-bold inline-block;
+	}
 
-    .info-text {
-        @apply text-2xl md:text-2xl text-gray-700 font-medium text-justify leading-relaxed
-    }
+	.info-text {
+		@apply text-2xl md:text-2xl text-gray-700 font-medium text-justify leading-relaxed;
+	}
 }
 
 @layer utilities {
-    .text-gradient {
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
+	.text-gradient {
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 
-    .smooth-scroll {
-        scroll-behavior: smooth;
-    }
+	.smooth-scroll {
+		scroll-behavior: smooth;
+	}
 
-    .player-wrapper {
-        position: relative;
-        padding-top: 56.25% /* Player ratio: 100 / (1280 / 720) */
-    }
-      
-    .react-player {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
+	.player-wrapper {
+		position: relative;
+		padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+	}
+
+	.react-player {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
 }

@@ -1,7 +1,7 @@
 import Routing from "Components/Routing/Routing";
-import 'styles/main.css';
+import "styles/main.css";
 import { TRACKING_ID } from "Config/config";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 
 ReactGA.initialize(TRACKING_ID);
 ReactGA.pageview(window.location.pathname + window.location.search);
