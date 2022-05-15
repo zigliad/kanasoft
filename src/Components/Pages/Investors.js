@@ -3,6 +3,9 @@ import PageHeader from "Components/Other/PageHeader";
 import { SECTIONS } from "Config/about";
 import TradingViewWidget, { Themes } from "react-tradingview-widget";
 import { CANNASOFT_STOCK_SYMBOL } from "Config/stock";
+import PDF1 from "Files/BYND Cannasoft December 2021 Final for Sedar.pdf";
+import PDF2 from "Files/BYND Cannasoft MDA Dec 2021.pdf";
+import PDF3 from "Files/BYND Notice and Circular.pdf";
 
 export default function Investors() {
 	const data = SECTIONS.map((section, index) => {
@@ -45,6 +48,17 @@ export default function Investors() {
 						theme={Themes.DARK}
 						autosize
 					/>
+				</div>
+				<div className="flex flex-col space-y-2">
+					<a href={PDF1} download>
+						BYND Cannasoft December 2021 Final for Sedar
+					</a>
+					<a href={PDF2} download>
+						BYND Cannasoft MDA Dec 2021
+					</a>
+					<a href={PDF3} download>
+						BYND Notice and Circular
+					</a>
 				</div>
 				<p className="disclaimer-text">
 					The Content in this website including information regarding
